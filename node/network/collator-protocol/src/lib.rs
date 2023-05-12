@@ -36,9 +36,7 @@ use polkadot_node_network_protocol::{
 };
 use polkadot_primitives::CollatorPair;
 
-use polkadot_node_subsystem::{
-	errors::SubsystemError, messages::NetworkBridgeTxMessage, overseer, SpawnedSubsystem,
-};
+use polkadot_node_subsystem::{errors::SubsystemError, overseer, SpawnedSubsystem};
 
 mod error;
 
@@ -124,7 +122,7 @@ impl<Context> CollatorProtocolSubsystem {
 
 /// Modify the reputation of a peer based on its behavior.
 async fn modify_reputation(
-	sender: &mut impl overseer::CollatorProtocolSenderTrait,
+	_sender: &mut impl overseer::CollatorProtocolSenderTrait,
 	peer: PeerId,
 	rep: Rep,
 ) {

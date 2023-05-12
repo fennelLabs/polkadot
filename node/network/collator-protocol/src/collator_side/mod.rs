@@ -67,9 +67,9 @@ pub use metrics::Metrics;
 mod tests;
 
 const COST_INVALID_REQUEST: Rep = Rep::CostMajor("Peer sent unparsable request");
-const COST_UNEXPECTED_MESSAGE: Rep = Rep::CostMinor("An unexpected message");
-const COST_APPARENT_FLOOD: Rep =
-	Rep::CostMinor("Message received when previous one was still being processed");
+// const COST_UNEXPECTED_MESSAGE: Rep = Rep::CostMinor("An unexpected message");
+// const COST_APPARENT_FLOOD: Rep =
+// 	Rep::CostMinor("Message received when previous one was still being processed");
 
 /// Time after starting an upload to a validator we will start another one to the next validator,
 /// even if the upload was not finished yet.
@@ -757,7 +757,7 @@ async fn handle_incoming_peer_message<Context>(
 /// Process an incoming network request for a collation.
 #[overseer::contextbounds(CollatorProtocol, prefix = self::overseer)]
 async fn handle_incoming_request<Context>(
-	ctx: &mut Context,
+	_ctx: &mut Context,
 	state: &mut State,
 	req: IncomingRequest<request_v1::CollationFetchingRequest>,
 ) -> Result<()> {

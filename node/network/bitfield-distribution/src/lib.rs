@@ -295,7 +295,7 @@ impl BitfieldDistribution {
 
 /// Modify the reputation of a peer based on its behavior.
 async fn modify_reputation(
-	sender: &mut impl overseer::BitfieldDistributionSenderTrait,
+	_sender: &mut impl overseer::BitfieldDistributionSenderTrait,
 	relay_parent: Hash,
 	peer: PeerId,
 	rep: Rep,

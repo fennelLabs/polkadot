@@ -1897,7 +1897,7 @@ async fn adjust_required_routing_and_propagate<Context, BlockFilter, RoutingModi
 
 /// Modify the reputation of a peer based on its behavior.
 async fn modify_reputation(
-	sender: &mut impl overseer::ApprovalDistributionSenderTrait,
+	_sender: &mut impl overseer::ApprovalDistributionSenderTrait,
 	peer_id: PeerId,
 	rep: Rep,
 ) {

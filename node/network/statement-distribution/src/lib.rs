@@ -1225,9 +1225,9 @@ async fn send_statements<Context>(
 }
 
 async fn report_peer(
-	sender: &mut impl overseer::StatementDistributionSenderTrait,
-	peer: PeerId,
-	rep: Rep,
+	_sender: &mut impl overseer::StatementDistributionSenderTrait,
+	_peer: PeerId,
+	_rep: Rep,
 ) {
 	// sender.send_message(NetworkBridgeTxMessage::ReportPeer(peer, rep)).await
 }

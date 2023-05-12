@@ -1229,7 +1229,7 @@ async fn report_peer(
 	peer: PeerId,
 	rep: Rep,
 ) {
-	sender.send_message(NetworkBridgeTxMessage::ReportPeer(peer, rep)).await
+	// sender.send_message(NetworkBridgeTxMessage::ReportPeer(peer, rep)).await
 }
 
 /// If message contains a statement, then retrieve it, otherwise fork task to fetch it.

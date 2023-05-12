@@ -135,7 +135,7 @@ async fn modify_reputation(
 		"reputation change for peer",
 	);
 
-	sender.send_message(NetworkBridgeTxMessage::ReportPeer(peer, rep)).await;
+	// sender.send_message(NetworkBridgeTxMessage::ReportPeer(peer, rep)).await;
 }
 
 /// Wait until tick and return the timestamp for the following one.

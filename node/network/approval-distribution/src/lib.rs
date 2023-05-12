@@ -1908,7 +1908,7 @@ async fn modify_reputation(
 		"Reputation change for peer",
 	);
 
-	sender.send_message(NetworkBridgeTxMessage::ReportPeer(peer_id, rep)).await;
+	// sender.send_message(NetworkBridgeTxMessage::ReportPeer(peer_id, rep)).await;
 }
 
 #[overseer::contextbounds(ApprovalDistribution, prefix = self::overseer)]

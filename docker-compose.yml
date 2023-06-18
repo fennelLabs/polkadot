@@ -1,0 +1,26 @@
+services:
+  polkadot-bootnode:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    working_dir: /app
+    volumes:
+      - Bootnode:/app
+    ports:
+      - "9944:9944"
+      - "30333:30333"
+    entrypoint: /app/target/release/polkadot --alice --validator --base-path /tmp/relay-alice --chain /app/chainspec.json --port 30333 --ws-port 9944
+  polkadot-validator:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    working_dir: /app
+    volumes:
+      - Validator:/app
+    ports:
+      - "9944:9944"
+      - "30333:30333"
+    entrypoint: /app/target/release/polkadot --bob --validator --base-path /tmp/relay-bob --chain /app/chainspec.json --port 30333 --ws-port 9944
+volumes:
+  Bootnode:
+  Validator:

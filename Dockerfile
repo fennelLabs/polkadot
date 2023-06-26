@@ -23,3 +23,8 @@ COPY --from=planner /app/recipe.json recipe.json
 RUN cargo chef cook --release --recipe-path recipe.json
 COPY . .
 RUN cargo build --release
+
+FROM debian:buster-slim as runtime
+WORKDIR /app
+COPY --from=builder /app/target/release/polkadot /app/polkadot
+COPY --from=builder /app/chain_spec.json /app/chain_spec.json

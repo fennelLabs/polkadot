@@ -27,4 +27,4 @@ RUN cargo build --release
 FROM debian:buster-slim as runtime
 WORKDIR /app
 COPY --from=builder /app/target/release/polkadot /app/polkadot
-COPY --from=builder /app/chain_spec.json /app/chain_spec.json
+COPY --from=builder /app/chainspec.json /app/chainspec.json

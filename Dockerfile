@@ -24,7 +24,6 @@ RUN cargo chef cook --release --recipe-path recipe.json
 COPY . .
 RUN cargo build --release
 
-FROM debian:buster-slim as runtime
-WORKDIR /app
+FROM base as runtime
 COPY --from=builder /app/target/release/polkadot /app/polkadot
 COPY --from=builder /app/chainspec.json /app/chainspec.json

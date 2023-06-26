@@ -34,7 +34,8 @@
             ["5FWvqW75hoHAcWPemxUEVDnQ63QGhzmFuJLC825k7pyH4vm8", 1000000000000000000],
             ["5CDng9hL6CgppnH9KWYzKyMkvri8m2CpUiJ6WumG3DYqZWNa", 1000000000000000000],
             ["5HGaxvf1oMkdtDi7KZYv2R3Wc78uL8eihNES8aheJJfJ7LWG", 1000000000000000000],
-            ["5Dy5BWzPT2PR6trM3YjDqAu1KZmTji3cVLfhvkMziQFzdeZw", 1000000000000000000]
+            ["5Dy5BWzPT2PR6trM3YjDqAu1KZmTji3cVLfhvkMziQFzdeZw", 1000000000000000000],
+            ["5GsW1jC7B9vCjVR7DshtEa8nW7enQb3Yb3sSQTYapoqEqfv6", 1000000000000000000]
           ]
         },
         "session": {
@@ -76,6 +77,19 @@
                 "para_assignment": "5Dy5BWzPT2PR6trM3YjDqAu1KZmTji3cVLfhvkMziQFzdeZw",
                 "authority_discovery": "5Dy5BWzPT2PR6trM3YjDqAu1KZmTji3cVLfhvkMziQFzdeZw",
                 "beefy": "KWAq2xYppbA1g4WDTaXE2nhrHvjsUAuhTuXEA6MNNwCLepXrs"
+              }
+            ],
+            [
+              "5GsW1jC7B9vCjVR7DshtEa8nW7enQb3Yb3sSQTYapoqEqfv6",
+              "5GsW1jC7B9vCjVR7DshtEa8nW7enQb3Yb3sSQTYapoqEqfv6",
+              {
+                "grandpa": "5Fcaf6noDj4nG8DeDGwo5jyX6zACAKWTiQNsrqywy1rRD3Gk",
+                "babe": "5GsW1jC7B9vCjVR7DshtEa8nW7enQb3Yb3sSQTYapoqEqfv6",
+                "im_online": "5GsW1jC7B9vCjVR7DshtEa8nW7enQb3Yb3sSQTYapoqEqfv6",
+                "para_validator": "5GsW1jC7B9vCjVR7DshtEa8nW7enQb3Yb3sSQTYapoqEqfv6",
+                "para_assignment": "5GsW1jC7B9vCjVR7DshtEa8nW7enQb3Yb3sSQTYapoqEqfv6",
+                "authority_discovery": "5GsW1jC7B9vCjVR7DshtEa8nW7enQb3Yb3sSQTYapoqEqfv6",
+                "beefy": "KW77dKHbJrWP9wkzNj8484QTdUchwfB7xNeuKQ3yybwfw87jR"
               }
             ]
           ]
